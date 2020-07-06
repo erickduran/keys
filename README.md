@@ -8,7 +8,7 @@ jekyll serve
 ```
 
 ## Acknowledgements
-Based on [audiosynth](https://github.com/keithwhor/audiosynth) and done the help of this awesome [post](https://www.smashingmagazine.com/2018/03/web-midi-api/).
+Based on [audiosynth](https://github.com/keithwhor/audiosynth) and done with the help of this awesome [post](https://www.smashingmagazine.com/2018/03/web-midi-api/).
 
 ## Project status
 Work in progress. Pending features:
