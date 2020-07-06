@@ -15,6 +15,7 @@ Work in progress. Pending features:
 - Adding sound option
 - Adding color selection
 - Adding MIDI device selection
+- Sustain pedal compatibility
 
 ## Author
 Copyright © 2020, Erick Durán.
