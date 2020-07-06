@@ -5,13 +5,11 @@ body {
 }
 
 :root {
-  --white-key-width: 26px;
   --white-key-height: 200px;
   --white-key-font-size: 15px;
   --white-key-font-color: black;
   --white-key-color: #F2F2DF;
 
-  --black-key-width: 16px;
   --black-key-height: 120px;
   --black-key-font-size: 10px;
   --black-key-font-color: white;

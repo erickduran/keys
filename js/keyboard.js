@@ -2,8 +2,8 @@ var whiteKeyColor = getComputedStyle(document.documentElement).getPropertyValue(
 var blackKeyColor = getComputedStyle(document.documentElement).getPropertyValue('--black-key-color');
 var orange = getComputedStyle(document.documentElement).getPropertyValue('--orange');
 var darkGreen = getComputedStyle(document.documentElement).getPropertyValue('--dark-green');
-var octaveStart = 0;
-var octaveEnd = 8;
+var octaveStart = 1;
+var octaveEnd = 7;
 
 var labels = false;
 
@@ -148,7 +148,7 @@ function endingOctaveUp() {
 }
 
 function resetOctaves() {
-	octaveStart = 0;
-	octaveEnd = 8;
+	octaveStart = 1;
+	octaveEnd = 7;
 	renderKeyboard();
 }
