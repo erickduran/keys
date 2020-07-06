@@ -1,0 +1,370 @@
+/* Start Keys */
+body {
+	font-family: 'Playfair Display', serif;
+	background-color: white;
+}
+
+:root {
+  --white-key-width: 26px;
+  --white-key-height: 200px;
+  --white-key-font-size: 15px;
+  --white-key-font-color: black;
+  --white-key-color: #F2F2DF;
+
+  --black-key-width: 16px;
+  --black-key-height: 120px;
+  --black-key-font-size: 10px;
+  --black-key-font-color: white;
+  --black-key-color: black;
+
+  --middle-c-font-size: 30px;
+  --orange: #E85C5A;
+  --dark-purple: #4A61E3;
+  --dark-green: #4C7E75; 
+}
+
+.key { 
+	position: absolute; 
+	border: 1px solid rgba(32,32,32,0.2);
+	border-radius: 0px 0px 5px 5px;
+	-webkit-transition: margin 0.05s ease, background-color 0.05s ease, box-shadow 0.05s ease; 
+}
+
+.label { 
+	position: absolute; 
+	text-align: center; 
+	left: 0px; 
+	right: 0px; 
+}
+
+.label.middle-c {
+	font-size: var(--middle-c-font-size); 
+	color: var(--white-key-font-color); 
+	bottom: 30px; 
+	font-weight: 700;
+}
+
+.label.black {
+	font-size: var(--black-key-font-size); 
+	color :var(--black-key-font-color); 
+	bottom: 15px;
+}
+
+.label.white {
+	font-size: var(--white-key-font-size);
+	color :var(--white-key-font-color);
+	bottom: 15px;
+}
+
+.key.black { 
+	background-color: var(--black-key-color); 
+	width: var(--black-key-width);
+	height: var(--black-key-height);
+	z-index: 1;
+}
+
+.key.white { 
+	background-color: var(--white-key-color); 
+	width: var(--white-key-width);
+	height: var(--white-key-height);
+	z-index: 0;
+}
+
+.keyboard-container {
+	height: var(--white-key-height); 
+	margin: 70px auto; 
+	position: relative;
+	user-select:none; 
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none; 
+}
+
+.settings-button {
+	font-size: .8em;
+	color: var(--orange); 
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+}
+
+.settings-button:hover {
+	color: var(--dark-purple); 
+}
+
+.settings-button:active {
+	color: var(--dark-purple); 
+}
+
+.settings-text { 
+	padding-left: 8px;
+	padding-right: 8px;
+}
+/* End Keys*/
+
+@media screen and (min-width: 601px) {
+  .icon-link {
+    font-size: 1em;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px  */
+@media screen and (max-width: 600px) {
+  .icon-link {
+    font-size: .8em;
+  }
+}
+
+::selection {
+	color: #4C7E75; 
+	background: transparent;
+}
+
+.section {
+	display: table;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#name {
+	font-weight: 700;
+	font-size: 60px;
+	color: #E85C5A;
+}
+
+.quote {
+	font-style: italic;
+	font-size: 30px;
+	font-weight: 400;
+	color: #E85C5A;
+}
+
+.author {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	color: #E85C5A;
+}
+
+.quote-container {
+	padding-right: 80px;
+	padding-left: 80px;
+}
+
+@media screen and (max-width: 800px) {
+	#name {
+		font-size: 50px;
+	}
+
+	.quote {
+		font-size: 26px;
+	}
+
+	.author {
+		font-size: 16px;
+	}
+}
+
+.section-container {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.section-title {
+	font-weight: 700;
+	margin-top: 40px;
+	font-style: italic;
+	font-size: 50px;
+	color: #E85C5A;
+}
+
+.section-text {
+	font-weight: 400;
+	font-size: 20px	;
+	color: #454a59;
+	margin-top: 50px;
+	margin-bottom: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.section-text-green {
+	font-weight: 400;
+	font-size: 20px	;
+	color: #008000;
+	margin-top: 50px;
+	margin-bottom: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.section-text-red {
+	font-weight: 400;
+	font-size: 20px	;
+	color: #B22222;
+	margin-top: 50px;
+	margin-bottom: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.section-title-link {
+	font-weight: 700;
+	font-size: 50px;
+	
+}
+
+.plain-title {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+a {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: #E85C5A;
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+	text-decoration: none;
+	color: #4A61E3;
+}
+
+.icon-link{
+	color: #E85C5A;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.icon-link:hover {
+	color: #4A61E3;
+}
+
+.container-footer {
+	text-align: center;
+	height: 50px;
+	color: #454a59;
+}
+
+.circle {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.circle.blue {
+	background-color: #A0D0F8;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.circle.purple {
+	background-color: #C2CAF8;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.circle.blue:hover {
+	opacity: 0.8;
+}
+
+.circle.purple:hover {
+	opacity: 0.8;
+}
+
+.circle.small {
+	width: 25px;
+	height: 25px;
+	margin-left: -12.5px;
+}
+
+.circle.normal {
+	margin-left: -15px;
+}
+
+.circle.animated {
+	animation: pulse 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+}
+
+.circle.animated-inverse {
+	animation: pulse-inverse 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+}
+
+.circle-a {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	left: 50%;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.8);
+	}
+}
+
+@keyframes pulse-inverse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes mini-pulse {
+	0% {
+		transform: scale(0.95);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+.text-container {
+	height: 0px;
+	width: 100%;
+	display: table;
+	align-content: center;
+	text-align: center;
+}
+
+#row3 {
+	height: 0px;
+	opacity: 0.0;
+}
+
+a.discrete {
+	color: #454a59;
+}
+
+a.discrete:hover {
+	color: #454a59;
+}
+
+a.discrete-title {
+	color: #E85C5A;
+}
+
+a.discrete-title:hover {
+	color: #E85C5A;
+}

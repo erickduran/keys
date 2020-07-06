@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<!-- Custom styles for this template -->
+    	<link href="css/styles.css" rel="stylesheet">
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    	<link rel="icon" type="image/png" href="icon.png">
+
+    	<!-- Custom fonts for this template -->
+    	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,700,900" rel="stylesheet">
+
+    	<title>Keys by Erick Durán</title>
+
+	</head>
+	<body>
+		<div class="section" id="master">
+			<div class="section-container">
+				<div class='keyboard-container' id="keyboard"></div>
+				<div class="circle-a">
+					<a class="js-scroll-trigger" href="#settings" title="Settings">
+						<div class="circle normal blue animated"></div>
+					</a>
+				</div>
+			</div>		
+		</div>
+		<div class="section" id="settings">
+			<div class="section-container">
+				<div class="circle-a">
+					<a class="js-scroll-trigger" href="#master">
+						<div class="circle small purple animated"></div>
+					</a>
+				</div>
+				<br><br>
+				<a class="settings-button" onclick="startingOctaveDown()">
+					<span class="fa-stack fa-2x">
+					  <i class="fas fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fa fa-chevron-down fa-stack-1x" style="color: white;"></i>
+					</span>
+				</a>
+				<span class='settings-text'>Starting octave</span>
+				<a class="settings-button" onclick="startingOctaveUp()">
+					<span class="fa-stack fa-2x">
+					  <i class="fas fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fa fa-chevron-up fa-stack-1x" style="color: white;"></i>
+					</span>
+				</a>
+				<br><br>
+				<a class="settings-button" onclick="endingOctaveDown()" >
+					<span class="fa-stack fa-2x">
+					  <i class="fas fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fa fa-chevron-down fa-stack-1x" style="color: white;"></i>
+					</span>
+				</a>
+				<span class='settings-text'>Ending octave</span>
+				<a class="settings-button" onclick="endingOctaveUp()" >
+					<span class="fa-stack fa-2x">
+					  <i class="fas fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fa fa-chevron-up fa-stack-1x" style="color: white;"></i>
+					</span>
+				</a>
+				<br><br>
+				<a id="names-button" class="settings-button" onclick="toggleNoteNames(this)" data-value="0" title="Note names">
+					<span class="fa-stack fa-2x">
+					  <i id="names-background" class="fas fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fa fa-hashtag fa-stack-1x" style="color: white;"></i>
+					</span>
+				</a>
+				<a class="settings-button" onclick="renderKeyboard()" title="Force render">
+					<span class="fa-stack fa-2x">
+					  <i class="fas fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fa fa-redo fa-stack-1x" style="color: white;"></i>
+					</span>
+				</a>
+				<a class="settings-button" onclick="resetOctaves()" title="Reset octaves (full keyboard)">
+					<span class="fa-stack fa-2x">
+					  <i class="fas fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fa fa-trash fa-stack-1x" style="color: white;"></i>
+					</span>
+				</a>
+				<br><br>
+
+				<a class="icon-link" href="https://github.com/erickduran/keys" target="_blank" title="Source code">
+					<span class="fa-stack fa-2x">
+					  <i class="fas fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fab fa-github fa-stack-1x" style="color: white;"></i>
+					</span>
+				</a>
+			</div>		
+		</div>
+	</body>
+
+	<!-- Keyboard Scripts -->
+	<script type="text/javascript" src="js/helpers.js"></script>
+	<script type="text/javascript" src="js/notes.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script type="text/javascript" src="js/midi.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- Footer -->
+    <footer>
+      <div class="container-footer">
+        <p>Copyright &copy; <a href="https://erickduran.com" class="discrete">Erick Durán</a> 2020</p>
+      </div>
+    </footer>
+</html>
